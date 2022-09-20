@@ -1,0 +1,98 @@
+{% extends "base.html" %} {% block title %}Matthew Curtis Page{% endblock %}
+{%block content %}
+
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <body id="page-top">
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Matthew Curtis
+                    </h1>
+                    <div class="subheading mb-5">
+                        Victoria, BC
+                        <a href="mailto:name@email.com">matthewcurtis1999@email.com</a>
+                    <ul class="list-inline dev-icons fa-2x">
+                                              <li class="list-inline-item"><i class="fab fa-solid fa-c"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                      <li class="list-inline-item"><i class="fab fa-git"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+                    </ul>
+                    </div>
+                    <p class="lead mb-5">I am a 2nd year Software Engineering student at the University of Victoria, looking for a Spring 2023 or Summer 2023 co-op opportunity. Classes of interest that I have taken include: Software Development Methods and Datastructures & Algorithms 1.</p>
+                    <div class="social-icons fa-2x"  >
+                        <a class="social-icon"  href="https://www.linkedin.com/in/matthew-curtis-2514801a1"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a class="social-icon" href="https://github.com/mattcurts"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+
+          
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">BattleSnake</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p>I created my own battlesnake named Monty, with which I learned about the FloodFill algorithm and placed 65th out of 135 snakes in my first tournament </p>
+                        <img src="/static/gif.gif">
+                    </div>
+                </div>
+            </section>
+
+
+                              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Randomized SVG Art</h3>
+                            <div class="subheading mb-3">Python, HTML</div>
+                            <p>Using Object oriented design, you can create randmized SVGs that you can use for greeting cards. Theses SVGs can be configured to your taste by adjusting the paremeters. </p>
+                        {% include html_file %}
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Victoria</h3>
+                            <div class="subheading mb-3">Bachelor of Sofware Engineering</div> 
+                              <ul>
+  <li>Software Development methods -  I learned bash, git, and Jupityer Notebooks. I also learned how to set up and use a virtual machine.  I  used the python testing library unittest to facilitate quick regression testing.</li>
+  <li>Data structures & algorithms 1 -  I learned basic data structures in addition to trees and a brief covering of graphs. I learned about sorting algorithms and some of their niche use cases.</li>
+</ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-secondary">May 2021 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">North Island College</h3>
+                            <div class="subheading mb-3">Industrial Instrumentation and Automation Techinician Diploma</div>
+                          <ul>
+  <li>Designed the Human Machine Interface for a hand sanitizer bottling production line.</li>
+  <li>Designed the software for a traffic light control system with a pedestrain walk light, using a Programmable Logic Controller.</li>
+  <li>Used AutoCAD 2018 for wiring and schematic diagrams for a widget-making machine.</li>
+</ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-secondary">September 2018 - May 2020</span></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
+{% endblock %}
